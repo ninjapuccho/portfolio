@@ -1,0 +1,112 @@
+input,
+button,
+select,
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  font: inherit;
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type='checkbox'],
+input[type='radio'] {
+  display: none;
+}
+
+input[type='submit'],
+input[type='button'],
+label,
+button,
+select {
+  cursor: pointer;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="datetime-local"]::-webkit-calendar-picker-indicator,
+input[type="month"]::-webkit-calendar-picker-indicator,
+input[type="week"]::-webkit-calendar-picker-indicator {
+  color: transparent;
+  cursor: pointer;
+  background: #eee url(calendar.svg) no-repeat center right 0px/16px 16px;
+  background-size: 16px;
+}
+
+.contact__form--label {
+  width: 100%;
+  display: inline-block;
+
+  color: #73716d;
+  letter-spacing: 0.1rem;
+  font-family: Noto Serif JP,serif;
+
+  text-align: center;
+  margin-top: 27px;
+}
+
+.concact__form--style {
+  width: 100%;
+  height: 4rem;
+
+  border: 1px solid #dcd8d1;
+  border-radius: 3px;
+
+  color: #73716d;
+  line-height: 2.75;
+  letter-spacing: 0.1rem;
+  font-family: Noto Serif JP,serif;
+
+  padding-left: 1.5rem;
+  box-sizing: border-box;
+
+  margin-top: 27px;
+}
+
+#contact__form--name::placeholder {
+  line-height: 2.75;
+  font-family: Noto Serif JP,serif;
+}
+
+#contact__form--email::placeholder {
+  line-height: 2.75;
+  font-family: Noto Serif JP,serif;
+}
+
+#contact__form--textarea {
+  height: 12.5rem;
+  line-height: 1.25;
+
+  padding: 2rem 1.5rem;
+}
+
+#contact__form--textarea::placeholder {
+  color: #73716d;
+  font-family: Noto Serif JP,serif;
+}
+
+#contact__form--button {
+  height: 4rem;
+
+  line-height: 2.2;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 2rem;
+}
+
+#contact__form--button:hover {
+  background-color: #edebe6;
+}
